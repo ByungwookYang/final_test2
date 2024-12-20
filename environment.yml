@@ -7,13 +7,12 @@ dependencies:
   - python-dotenv
   - pip
   - pip:
-    - streamlit
-    - langchain>=0.0.304
+    - streamlit==1.37.0
+    - langchain
     - openai
     - langchain-experimental
     - tiktoken
     - faiss-cpu
     - langchain-openai
     - langchain-community
-    - wikipedia
     - pdfplumber
