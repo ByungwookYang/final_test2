@@ -12,7 +12,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
-# from langchain_teddynote import logging
 from langchain_core.prompts import PromptTemplate
 from langchain_core.prompts import load_prompt
 
@@ -83,7 +82,8 @@ def add_message(role, message):
 
 
 # 파일을 캐시 저장(시간이 오래 걸리는 작업을 처리할 예정)
-@st.cache_resource(show_spinner="업로드한 파일을 처리 중입니다..")
+# @st.cache_resource(show_spinner="업로드한 파일을 처리 중입니다..")
+
 
 # cache_resource는 파일이 업로드 되면
 def embed_file(file):
