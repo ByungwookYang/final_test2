@@ -141,8 +141,9 @@ def create_chain(retriever, temperature, model_name="gpt-4o"):
 
 # 파일이 업로드 되었을 때
 if uploaded_file:
-    # 파일 업로드 후 retriever 생성(작업시간 오래걸릴 예정)
-    retriever = embed_file(uploaded_file)
+    # 업로드 후 retriever 생성(작업시간 오래걸릴 예정)
+    with st.spinner("문서 임베딩 처리 중... 잠시만 기다려주세요."):
+        retriever = embed_file(uploaded_file)
 
 # 적용버튼이 눌렸을 때
 if user_text_apply_btn:
