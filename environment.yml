@@ -4,11 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - flask
-  - requests
-  - beautifulsoup4
   - python-dotenv
-  - langchain-experimental
   - pip
   - pip:
     - streamlit
